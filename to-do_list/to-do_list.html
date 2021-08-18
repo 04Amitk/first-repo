@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To-do_list</title>
+    <link rel="stylesheet" href="to-do_list.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="to-do_list.js"></script>
+    <div class="container">
+      <header class="head">
+        <h1>To-do List</h1>
+      </header>
+      <div class="add-items">
+        <h2>Add Items:-</h2>
+        <label id="confirm">Item Added Successfully</label>
+        <input type="text" id="t1" onclick="hide()">
+        <button type="button" name="button" onclick="fetch()">Add</button>
+      </div>
+      <div class="list">
+        <h2>Tasks:-</h2>
+        <div class="list-items">
+          <ul id="items"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

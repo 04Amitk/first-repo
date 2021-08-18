@@ -1,0 +1,42 @@
+body{
+  background-image: url("D:/Web Tech/first-repo/images/to-do back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: blue;
+}
+.container{
+  position: absolute;
+  width: 350px;
+  padding: 30px;
+  height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.head{
+  text-align: center;
+  text-decoration: underline;
+  margin-top: -30px;
+  margin-bottom: 35px;
+  color: #2C3A47;
+  font-family: cursive;
+}
+.add-items label{
+  display: none;
+  color: green;
+}
+.add-items h2{
+  margin: -13px 0px 0px;
+  color: #cd6133;
+}
+.list h2{
+    color: #cd6133;
+    text-decoration: underline;
+}
+.list-items li{
+  font-family: cambria;
+  margin: 5px;
+  color: #1e272e;
+  font-weight: bolder;
+  font-size: 20px;
+}
