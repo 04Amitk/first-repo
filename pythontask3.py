@@ -4,4 +4,4 @@ def recsum(n):
     return (n+recsum(n-1))
 
 n=int(input("Enter a positive number: "))
-print("Sum of natural numbers: ",recsum(n))
+print("The sum is",recsum(n))
