@@ -1,0 +1,162 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar{
+position: fixed;
+top: 0px;
+left: 0px;
+width: 300px;
+height: 100%;
+border-right: 2px solid gray;
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 10px;
+  width: calc(100% - 310px);
+  /* border: 2px solid red; */
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 15px 0px;
+}
+
+.main-section{
+  border-bottom: 2px solid rgb(156, 156, 156);
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 10px;
+  font-size: 0.96em;
+}
+
+#navbar .nav-ul{
+  padding: 0;
+  list-style: disc;
+}
+
+#navbar ol{
+display: none;
+margin-bottom: 10px;
+}
+
+#navbar a:hover + ol{
+display: block;
+}
+
+.content-head{
+  font-weight: 600;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.content-head-list li{
+  list-style: disc;
+}
+
+#navbar .head-link {
+  color: #4d4e53;
+  border-top: 1px solid;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 5px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+#navbar a:hover{
+  text-decoration: underline;
+}
+
+#navbar p{
+  margin-left: 10px;
+  display: inline;
+}
+
+article{
+  width: 70rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.imgdiv img{
+  height: 300px;
+  width: 200px;
+  /* border: 2px solid red; */
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  .nav-ul{
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+    overflow-y: scroll;
+  }
+
+  article{
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+}
